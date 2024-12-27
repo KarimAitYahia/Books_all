@@ -1,23 +1,113 @@
 <!DOCTYPE html>
-   <html lang="en">
-   <head>
-       <meta charset="UTF-8">
-       <meta name="viewport" content="width=device-width, initial-scale=1.0">
-       <title>YewFilmApp</title>
-       <link rel="stylesheet" href="style.css">
-   </head>
-   <body>
-       <header>
-           <h1>YewFilmApp</h1>
-       </header>
+<html lang="ar">
 
-       <section id="content">
-           <div class="movie">
-               <h2>Movie Title</h2>
-               <p>Description of the movie...</p>
-           </div>
-       </section>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>تحميل تطبيق Books</title>
+    <style>
+        /* التنسيق الأساسي للصفحة */
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f4f4f4;
+            margin: 0;
+            padding: 0;
+            direction: rtl;
+        }
 
-       <script src="app.js"></script>
-   </body>
-   </html>
+        header {
+            background-color: #2c3e50;
+            color: white;
+            text-align: center;
+            padding: 20px;
+        }
+
+        .content {
+            padding: 20px;
+            text-align: center;
+        }
+
+        .app-description {
+            font-size: 18px;
+            margin-top: 20px;
+            color: #333;
+        }
+
+        .app-images {
+            display: flex;
+            justify-content: center;
+            margin-top: 20px;
+        }
+
+        .app-images img {
+            width: 200px;
+            height: 350px;
+            margin: 10px;
+            border-radius: 8px;
+            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+        }
+       footer {
+            background-color: #2c3e50;
+            color: white;
+            text-align: center;
+            padding: 10px;
+            position: absolute;
+            bottom: 0;
+            width: 100%;
+        }
+
+        .download-btn {
+            background-color: #3498db;
+            color: white;
+            padding: 15px 30px;
+            border: none;
+            border-radius: 5px;
+            font-size: 18px;
+            margin-top: 20px;
+            cursor: pointer;
+        }
+
+        .download-btn:hover {
+            background-color: #2980b9;
+        }
+    </style>
+</head>
+
+<body>
+
+    <header>
+        <h1>تطبيق Books</h1>
+    </header>
+
+    <div class="content">
+        <div class="app-description">
+            <h2>عن التطبيق</h2>
+            <p>
+                تطبيق *Books* هو التطبيق الأمثل للقراء. يمكنك من تصفح الكتب الإلكترونية وقراءتها
+                بكل سهولة. يتميز التطبيق بواجهة مستخدم بسيطة وسهلة الاستخدام، بالإضافة إلى مكتبة ضخمة من الكتب في
+                مختلف المجالات.
+            </p>
+            <p>
+                استمتع بقراءة الكتب المفضلة لديك في أي وقت ومن أي مكان، وشاركها مع أصدقائك بسهولة.
+            </p>
+        </div>
+
+        <div class="app-images">
+            <img src="image1.jpg" alt="صورة التطبيق 1">
+            <img src="image2.jpg" alt="صورة التطبيق 2">
+            <img src="image3.jpg" alt="صورة التطبيق 3">
+        </div>
+
+        <button class="download-btn" onclick="window.location.href='https://example.com/download'">
+            تحميل الآن
+        </button>
+    </div>
+
+    <footer>
+        <p>جميع الحقوق محفوظة © 2024</p>
+    </footer>
+
+</body>
+
+</html>
